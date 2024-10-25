@@ -13,7 +13,7 @@ class CreateWasteRemovalTable extends Migration
      */
     public function up()
     {
-        Schema::create('_waste_removal', function (Blueprint $table) {
+        Schema::create('waste_removal', function (Blueprint $table) {
 $table->id();  // 自增主鍵
 $table->string('city', 50)->comment('縣市別');  // 縣市別
 $table->integer('cleanup_area')->comment('清理範圍(處)');  // 清理範圍(處)
